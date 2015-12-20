@@ -1,7 +1,24 @@
 <!DOCTYPE html>
 <html>
+<link href='https://fonts.googleapis.com/css?family=Shadows+Into+Light' rel='stylesheet' type='text/css'>
+<style type="text/css">
+	h1, h2 {
+		font-family: 'Shadows Into Light', cursive;
+		text-align: center;
+	}
+</style>
+
 <body>
-<h1>Hello World</h1>
-<p>I'm hosted with GitHub Pages.</p>
+<h1 id='sketch'>on sketch</h1>
+<h2 id='soon'>comming soon</h2>
+
+<script type="text/javascript">
+	if(navigator.language){
+		if (navigator.language =='pt-BR') {
+			document.getElementsByTagName('h1')[0].innerHTML ='no rascunho';
+			document.getElementsByTagName('h2')[0].innerHTML ='em breve';
+		}
+	}
+</script>
 </body>
 </html>
