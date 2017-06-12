@@ -1,0 +1,30 @@
+<div #appContainer class="canvas-container">
+  <div [style.height.px]="size[1]" class="overlay">
+
+    <nav class="navbar navbar-toggleable-sm navbar-light bg-faded alpha-hover">
+      <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <a class="navbar-brand" [routerLink]="['/']"><abbr title="Not so HyperText Markup Language" class="initialism">MICHEL ALONSO</abbr></a>
+
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav mr-auto">
+          <li class="nav-item" routerLinkActive="active">
+            <a class="nav-link" [routerLink]="['/home']">Home <span class="sr-only">(current)</span></a>
+          </li>
+          <li class="nav-item" routerLinkActive="active">
+            <a class="nav-link" [routerLink]="['/lab']">Lab</a>
+          </li>
+          <li class="nav-item" routerLinkActive="active">
+            <a class="nav-link" [routerLink]="['/broken']">A broken Link</a>
+          </li>
+          <li class="nav-item" routerLinkActive="active">
+            <a class="nav-link disabled" href="#">Labs</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+    <router-outlet></router-outlet>
+  </div>
+</div>

@@ -1,0 +1,66 @@
+@import "../node_modules/bootstrap/scss/bootstrap";
+
+/* You can add global styles to this file, and also import other style files */
+// * { margin:0; padding:0; } /* to remove the top and left whitespace */
+
+// html, body { width:100%; height:100%; } /* just to be sure these are full screen*/
+body {
+  font-family: 'Nova Mono', monospace;
+}
+h1, h2 {
+  font-family: 'Six Caps', 'Nova Mono', monospace;
+  text-transform: uppercase;
+}
+::selection {
+  background: #926;
+}
+.text-justify {
+  text-align: justify;
+}
+.alpha-hover {
+  // pointer-events: none;
+  &:hover {
+    background-color: rgba(247, 247, 247, 1);
+  }
+  background-color: rgba(247, 247, 247, 0.5);
+}
+.fullsize {
+  position: fixed;
+  height: 100%;
+  width: 100%;
+  left: 0;
+  top: 54px;
+  margin: 0;
+}
+.canvas-container {
+  // width: 100%;
+  position: relative;
+  > canvas {
+    position: absolute;
+  }
+  .overlay {
+    position: absolute;
+    width: 100%;
+  }
+}
+
+.invert-link {
+  padding-left: 2px;
+  font-weight: bold;
+  display: block;
+  background-color: #926;
+  color: #296;
+  &:hover {
+    font-size: 2rem;
+    background-color: #296;
+    color: #926;
+  }
+}
+.menu {
+  list-style-type: none;
+  background-color: #222222;
+  li {
+    text-transform: uppercase;
+    padding: 2px;
+  }
+}
