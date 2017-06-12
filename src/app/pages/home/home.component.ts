@@ -11,8 +11,8 @@ export class HomeComponent implements OnInit {
 
   constructor() {
     this.titles =[
-      'Not under construction. This is not a building',
-      'Under construction, forever and never'
+      'Not under construction. Not a building.',
+      'Under construction, forever and never.'
     ]
 
     const index = Math.floor(Math.random() * this.titles.length);
