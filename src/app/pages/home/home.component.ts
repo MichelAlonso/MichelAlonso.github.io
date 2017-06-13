@@ -16,7 +16,6 @@ export class HomeComponent implements OnInit {
     ]
 
     const index = Math.floor(Math.random() * this.titles.length);
-
     this.title = this.titles[index];
   }
 
