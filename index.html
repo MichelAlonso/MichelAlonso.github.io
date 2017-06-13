@@ -10,6 +10,21 @@
   <link href="https://fonts.googleapis.com/css?family=Nova+Mono|Six+Caps" rel="stylesheet">
 <link href="styles.a9c678abb10a8f4ccc50.bundle.css" rel="stylesheet"/></head>
 <body>
+  <script>
+    (function(){
+      var redirect = sessionStorage.redirect;
+      delete sessionStorage.redirect;
+      if (redirect && redirect != location.href) {
+        history.replaceState(null, null, redirect);
+        // REMOVE THIS - just showing the redirect route in the UI
+        document.body.setAttribute('message', 'This page was redirected by 404.html, from the route: ' + redirect);
+      }
+      else {
+        // REMOVE THIS - just showing the redirect route in the UI
+        document.body.setAttribute('message', 'This page was loaded directly from the index.html file');
+      }
+    })();
+  </script>
   <app-root>Loading...</app-root>
   <script type="text/javascript" src="inline.d6b8dde9c1ba40db1d66.bundle.js"></script>
   <script type="text/javascript" src="polyfills.da35b060f74d9abfc55a.bundle.js"></script>
