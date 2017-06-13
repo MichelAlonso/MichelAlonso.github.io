@@ -14,7 +14,7 @@ export class PixiScene {
 
   constructor(width?: number, height?: number) {
     this.app = new PIXI.Application(width, height);
-    PIXI.loader.add('bunny', 'assets/bunny.png').load(this.load.bind(this));
+    PIXI.loader.add('bunny', '/assets/bunny.png').load(this.load.bind(this));
     PIXI.loader.onLoad.add(this.start.bind(this));
 
     this.createBackground(this.app.renderer.width, this.app.renderer.height);
