@@ -4,7 +4,7 @@ import { HomeComponent } from 'app/pages/home/home.component';
 import { LabComponent } from 'app/pages/lab/lab.component';
 import { PageNotFoundComponent } from 'app/pages/page-not-found/page-not-found.component';
 
-export const appRoutes: Routes = [
+export const AppRoutes: Routes = [
   { path: '', redirectTo: 'home', pathMatch: 'full' },
   { path: 'home', component: HomeComponent },
   { path: 'lab', component: LabComponent },
@@ -14,4 +14,4 @@ export const appRoutes: Routes = [
 
 export const appRoutingProviders: any[] = [];
 
-export const routing: ModuleWithProviders = RouterModule.forRoot(appRoutes);
+export const routing: ModuleWithProviders = RouterModule.forRoot(AppRoutes);

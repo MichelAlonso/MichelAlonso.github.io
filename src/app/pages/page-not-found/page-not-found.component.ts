@@ -11,7 +11,7 @@ export class PageNotFoundComponent implements OnInit {
   constructor() { }
 
   ngOnInit() {
-    this.audioElement.nativeElement.volume = 0.01;
+    this.audioElement.nativeElement.volume = 0.1;
   }
 
 }

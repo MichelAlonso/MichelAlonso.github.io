@@ -20,7 +20,7 @@ export class DrawNoise extends PIXI.Container {
 
   mouseChange(event: PIXI.interaction.InteractionEvent) {
     this.noiseScale = (window.innerHeight - event.data.global.y) * 0.05;
-    this.lineWidth = Math.ceil(Math.random() * 10) + 2;
+    this.lineWidth = Math.ceil(Math.random() * 20) + 2;
   }
 
   update() {

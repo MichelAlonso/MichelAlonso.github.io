@@ -5,7 +5,7 @@ import { HttpModule } from '@angular/http';
 import { RouterModule } from '@angular/router';
 
 import { AppComponent } from './app.component';
-import { appRoutes } from 'app/app.routes';
+import { AppRoutes } from 'app/app.routes';
 import { HomeComponent } from './pages/home/home.component';
 import { LabComponent } from './pages/lab/lab.component';
 import { PageNotFoundComponent } from './pages/page-not-found/page-not-found.component';
@@ -21,7 +21,7 @@ import { PageNotFoundComponent } from './pages/page-not-found/page-not-found.com
     BrowserModule,
     FormsModule,
     HttpModule,
-    RouterModule.forRoot(appRoutes),
+    RouterModule.forRoot(AppRoutes),
   ],
   providers: [],
   bootstrap: [AppComponent]
